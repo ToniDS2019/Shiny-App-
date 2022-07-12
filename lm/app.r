@@ -14,10 +14,7 @@ ui <- fluidPage(
 
     # Application title
     titlePanel("Old Faithful Geyser Data"),
-    
-   actionButton("do", "Add Fit")
-
-    plotOutput("distPlot") 
+  
 
 
     # Sidebar with a slider input for number of bins 
@@ -94,17 +91,6 @@ server <- function(input, output) {
     # })
     # 
      
-    output$distPlot <- renderPlot({
-    # Take a dependency on input$goButton. This will run once initially,
-    # because the value changes from NULL to 0.
-   
-        input$goButton
-output$plot <- renderPlot({
-    plot(data())
-    if(input$line) {
-      model <- lm(dataInput()$x ~dataInput()$y , data=data())
-      abline(model)
-
     
     output$distPlot <- renderPlot({
         plot(dataInput()$x,dataInput()$y)
