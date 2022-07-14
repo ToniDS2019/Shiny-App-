@@ -1,4 +1,4 @@
 # conda_binder
 Basic Conda based Binder
 
-[![Binder]https://mybinder.org/v2/gh/ToniDS2019/Shiny-App-/py39_r40_shiny?urlpath=shiny]
+[![Binder]https://notebooks.gesis.org/binder/jupyter/user/tonids2019-shiny-app--pv5moooz/lab
